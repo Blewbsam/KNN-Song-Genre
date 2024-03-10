@@ -1,12 +1,13 @@
 # spotify-top-hits
-Predict whether a song will be included in the spotify top hits playlist or not
+Analyze using various factors that constitude a song to forecast what is the song genre.
 
 ## introduction
 ### background information and project goal
-The aim of our project is to use various data from popular songs to determine what factors 
-contribute to a popular song and if a new song will be a top hit.
+The aim of our project is to use various data from popular songs in order to predict 
+what kind of genre would a song be when knowing several factors of the song.
+
 ### dataset used
-The dataset we will be using is a collection of the top ~1000 songs on spotify ranked by
+The dataset we will be using is a collection of the top ~21000 songs on spotify ranked by
 their number of streams.
 
 ## preliminary exploratory data analysis
@@ -15,8 +16,10 @@ refer to data_anaylsis.ipynb file.
 ## methods 
 we will conduct our data analysis using various columns in thet dataset such as tempo (bpm), 
 danceability, liveliness, acousticness, etc. to create a kNN prediction model.
+
 ### method of visualization
-We will use a scatterplot graph to help visualize our prediction model.
+We will use a barplot graph and put the factors of different genre side by side to help 
+visualize our prediction model.
 
 ## expected outcomes and significance
 We expect songs that are generally upbeat and have a fast tempo to be more popular.
