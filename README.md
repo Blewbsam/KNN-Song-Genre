@@ -1,30 +1,13 @@
-# spotify-top-hits
-Analyze using various factors that constitude a song to forecast what is the song genre.
+# Genre prediction of songs using KNN algorithms
+Modern streaming software in the likes of spotify and Apple music contain an abundance of tracks accounting for more than 220 years worth of listening. This amount is too large for any amount of workforce to classify into genres. Thus there exists a real world need of an algorith which is capable of classifying various songs into appropriate genres and presenting them to curious listeners. Classification through various languages, cultures, and eras is a complicated manner as it is near impossible to find distinguishing futures for all the possible categories. 
+We humans however, are capable of feeling and reasonoing about curtain characteristics of songs by just listening to them for a few seconds and intuit about their genre. Desipite the simplicity for us, What characteristics we use to distinguish genre is not necessarily clear and might be mainly sub-conscious. In the following project, we will apply a K-nearest-neighbor algorithm on a dataset containing songs from the four genres R&B, Pop, Rock and Rap and see if the model applies adequately given its predictors which are:
+- Liveness: Detects presence of audience in the recording and acts as a confidence measure for wether the song was performed live or not.
+- Daceability: Considers tempo, rythm, stability, beat strength and overall regularity to measure how suitable a track is for dancing.
+- Valence: Measure of musical positiveness.
+- Acousticness: Confidence measure of wether a track is acoustic or not.
+- Speechiness: The ratio of speech presence in a track.
+- Loudness: The overall loudness of a track in decibels scaled to be between 0 and 1 from -60 to 0 db.
 
-## introduction
-### background information and project goal
-The aim of our project is to use various data from popular songs in order to predict 
-what kind of genre would a song be when knowing several factors of the song.
-
-### dataset used
-The dataset we will be using is a collection of the top ~21000 songs on spotify ranked by
-their number of streams.
-
-## preliminary exploratory data analysis
-refer to data_anaylsis.ipynb file.
-
-## methods 
-we will conduct our data analysis using various columns in thet dataset such as tempo (bpm), 
-danceability, liveliness, acousticness, etc. to create a kNN prediction model.
-
-### method of visualization
-We will use a barplot graph and put the factors of different genre side by side to help 
-visualize our prediction model.
-
-## expected outcomes and significance
-We expect songs that are generally upbeat and have a fast tempo to be more popular.
-The impact of our findings can give us an insight in what features music listeners today
-enjoy. Our findings also represent a reflection our culture as they reveal what current 
-day societal values and concerns are.
-Some further questions this could lead to are how music genres evolve throughout time? 
-What factors contribute to the emergence of new genres and the decline of existing ones?
+The two quesitons we are attempting to answer through this notebook are:
+1. Is the K-nearest neighbor algorithm applicable to classifcation of music across multiple genres?
+2. Are the chosen charecteristics good predictors of a songs genre?
